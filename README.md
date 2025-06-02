@@ -74,24 +74,30 @@ This project:
 ## Technical Details
 
 The project uses:
-- Python with Spotipy for Spotify API integration
+- Python 3.8 or higher
+- Spotipy for Spotify API integration
 - Pandas for data management
 - RapidFuzz for fuzzy string matching to handle name variations
 
 ## Setup
 
-1. Create a Spotify Developer account and get your credentials
-2. Set up your `.env` file with:
+1. Ensure you have Python 3.8 or higher installed
+2. Create a Spotify Developer account and get your credentials
+3. Set up your `.env` file with:
    ```
    SPOTIPY_CLIENT_ID=your_client_id
    SPOTIPY_CLIENT_SECRET=your_client_secret
    SPOTIPY_REDIRECT_URI=http://127.0.0.1:8888/callback
    ```
-3. Install required packages:
+4. Install required packages using pip:
+   ```
+   pip install -r requirements.txt
+   ```
+   Or install them individually:
    ```
    pip install spotipy pandas python-dotenv rapidfuzz
    ```
-4. Run the script:
+5. Run the script:
    ```
    python main.py
    ```
